@@ -14,9 +14,7 @@
     }
   },
   "postCreateCommand": [
-    "curl -L -o oml-vision-0.3.0.vsix https://github.com/opencaesar/oml-vision/releases/download/v0.3.0/oml-vision-0.3.0.vsix",
     "code --install-extension oml-vision-0.3.0.vsix",
-    "curl -L -o oml-luxor-2.13.0.vsix https://github.com/opencaesar/oml-luxor/releases/download/2.13.0/oml-luxor-2.13.0.vsix",
     "code --install-extension oml-luxor-2.13.0.vsix"
   ]
 }
