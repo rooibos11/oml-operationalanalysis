@@ -4,6 +4,12 @@
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "21"
+    },
+    "ghcr.io/devcontainers/features/r:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/quarto:1": {
+      "version": "latest"
     }
   },
   "customizations": {
