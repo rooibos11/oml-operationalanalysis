@@ -13,9 +13,11 @@
       ]
     }
   },
-  "postCreateCommand": [
-    "curl -fsSL https://code-server.dev/install.sh | sh",
-    "code-server --install-extension .devcontainer/oml-vision-0.3.0.vsix",
-    "code-server --install-extension .devcontainer/oml-luxor-2.13.0.vsix"
+  "onCreateCommand": [
+//    "curl -fsSL https://code-server.dev/install.sh | sh",
+//    "code-server --install-extension .devcontainer/oml-vision-0.3.0.vsix",
+//    "code-server --install-extension .devcontainer/oml-luxor-2.13.0.vsix",
+    "code --install-extension .devcontainer/oml-luxor-2.13.0.vsix",
+    "code --install-extension .devcontainer/oml-vision-0.3.0.vsix"
   ]
 }
