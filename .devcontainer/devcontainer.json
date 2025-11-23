@@ -13,5 +13,5 @@
       ]
     }
   },
-  "onCreateCommand": "sh -c 'code --install-extension .devcontainer/oml-luxor-2.13.0.vsix && code --install-extension .devcontainer/oml-vision-0.3.0.vsix'"
+  "postCreateCommand": "sh -c 'code --install-extension .devcontainer/oml-luxor-2.13.0.vsix && code --install-extension .devcontainer/oml-vision-0.3.0.vsix'"
 }
