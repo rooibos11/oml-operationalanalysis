@@ -24,7 +24,8 @@ jobs:
           OWNER_LC=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')
           echo "Building with tag: ghcr.io/$OWNER_LC/oml-dev:latest"
           # 定義した環境変数を使って docker build を実行
-          docker build -t ghcr.io/$OWNER_LC/oml-dev:latest .
+          # docker build -t ghcr.io/$OWNER_LC/oml-dev:latest .
+          docker build -f .devcontainer/Dockerfile -t ghcr.io/$OWNER_LC/oml-dev:latest .
 
       # Push Docker image ステップも同様に修正・統合
       - name: Push Docker image
