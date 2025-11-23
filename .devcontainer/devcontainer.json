@@ -1,17 +1,11 @@
 {
   "name": "OML Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/java:21", // Java 21ベースの公式イメージ
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "21"
-    },
-    "ghcr.io/devcontainers/features/r:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/quarto:1": {
-      "version": "latest"
-    }
-  },
+  "image": "ghcr.io/utnak/oml-dev:latest",
+  // "image": "mcr.microsoft.com/devcontainers/java:21", // Java 21ベースの公式イメージ
+  // "features": {
+  //   "ghcr.io/devcontainers/features/java:1": {
+  //     "version": "21"
+  //   }
   "customizations": {
     "vscode": {
       "extensions": [
