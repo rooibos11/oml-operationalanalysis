@@ -23,11 +23,12 @@ jobs:
 
       - name: Run Scripts
         run: quarto render script/analysis_matrix.qmd
-
+      - name: Check Results
+        run: ls
       - name: Publish Docs
         uses: actions/upload-pages-artifact@v4
         with:
-          path: script/**/*.html
+          path: script/*.html
 
   deploy:
     if: contains(github.event.head_commit.message, '[omlanalysis]')
