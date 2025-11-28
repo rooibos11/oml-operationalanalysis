@@ -52,7 +52,7 @@ ORDER BY ?m_id
 df_query <- send_query(endpoint_url,query_string)
 ```
 
-## Create Matrx
+## Create Matrix
 
 ```{r}
 library(stringr)
