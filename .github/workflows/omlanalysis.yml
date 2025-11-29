@@ -11,7 +11,7 @@ jobs:
     if: contains(github.event.head_commit.message, '[omlanalysis]')
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/utnak/oml-dev:latest
+      image: ghcr.io/rooibos11/oml-dev:latest
 
     steps:
       - uses: actions/checkout@v4
